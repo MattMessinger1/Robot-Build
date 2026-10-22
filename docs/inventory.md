@@ -1,32 +1,19 @@
 # Evidence and equipment inventory
 
-Update this list as materials are located. Do not record passwords or other
-credentials here. The earlier runs described in the plan have not yet been
-checked against their original files.
+The parts for the first test are reported to be on hand. Use this checklist to identify the actual parts and find the earlier work before setting anything up. Do not record passwords or credentials here.
 
-## Existing materials
+## Earlier work
 
-- [ ] Earlier code and exact commands: location, version and date.
-- [ ] Earlier wiring photos and board labels: location and date.
-- [ ] Earlier readings, communication-fault records and results: location and
-  date. The plan reports four normal and four fault runs; details and original
-  evidence are still needed.
-- [ ] Raspberry Pi or computer: model and operating system.
-- [ ] Power supply, microSD card and reader: model and availability. Preserve
-  existing card data; Raspberry Pi Imager erases the card it prepares.
-- [ ] MPU-6050 board: manufacturer, exact breakout model, dimensions, pin
-  labels, voltage, connectors and authoritative wiring instructions. A sensor
-  is reported available; the exact board remains to be identified.
+- [ ] Motor-control code and exact commands: location, version, and date.
+- [ ] Wiring and setup notes or photos: location and date.
+- [ ] Original readings, communication-fault records, and results, including failed runs: location and date. The notes report four normal and four fault runs; the original files and conditions still need review.
 
-## Bench supplies
+## Ruler test
 
-- [ ] Forearm and fixed hand at 95%, 100% and 105%; largest length about
-  298.2 mm. Confirm printer capacity.
-- [ ] One reusable holder and one sensor pad; verify fit for each arm size and
-  the actual sensor board before use.
-- [ ] Two hook-and-loop straps and nonconductive mounting tape.
-- [ ] A separate marked angle scale or protractor and a camera.
+- [ ] Raspberry Pi, power supply, and working microSD card: model and operating system. Preserve existing card data; Raspberry Pi Imager erases the card it prepares.
+- [ ] MPU-6050: exact breakout board, pin labels, voltage, connectors, and wiring instructions.
+- [ ] Servo: make and model, whether it can hold a position, suitable power supply, controller or driver if needed, and wiring instructions.
+- [ ] Compatible wires and a secure way to attach the ruler and sensor, including nonconductive mounting tape.
+- [ ] Ruler and separate marked protractor: note the protractor's reading precision.
 
-Record open questions, sources, dates and decisions alongside this list. Check
-the actual board, host voltage and wiring before connecting power; do not infer
-connections from a generic MPU-6050 module.
+Record open questions, sources, dates, and decisions alongside this list. Check the actual parts' voltage and wiring before connecting power. The servo is reported to be available, but its model, supply, and the complete wiring still need checking. No printed arm is needed for this first test.
