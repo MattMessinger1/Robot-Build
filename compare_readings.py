@@ -143,6 +143,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Samples: {len(results)}")
     print(f"Differences over 5 degrees: {counts['difference_warnings']}")
     print(f"Sensor readings over 45 degrees: {counts['sensor_warnings']}")
+    print("Threshold comparisons treat entered angles as exact; consider measurement uncertainty.")
     print("For the >45 degree warning, using the independent reference >45 degrees as the comparison:")
     print(f"  true positives: {counts['true_positive']}; false positives: {counts['false_positive']}; "
           f"false negatives (missed): {counts['false_negative']}; true negatives: {counts['true_negative']}")

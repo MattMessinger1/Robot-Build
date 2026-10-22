@@ -33,6 +33,6 @@ python3 compare_readings.py examples/synthetic-readings.csv --output sample-anal
 
 The output file must be new; choose another filename for each run. The original CSV is not changed.
 
-To test a known error without changing the input, add `--inject SAMPLE_ID` for each selected sample. The tool adds 10° to those readings in its output copy and marks them as injected. It reports differences over 5° and sensor readings over 45°, comparing the latter with the independent reference. These values are experiment settings, not safety limits.
+To test a known error without changing the input, add `--inject SAMPLE_ID` for each selected sample. The tool adds 10° to those readings in its output copy and marks them as injected. It reports differences over 5° and sensor readings over 45°, comparing the latter with the independent reference. It treats the entered angles as exact; consider the recorded reference uncertainty, especially near a threshold. These values are experiment settings, not safety limits.
 
 See [the experiment plan](docs/experiment-plan.md), [inventory checklist](docs/inventory.md), and [evidence guide](evidence/README.md) for the repeatable bench procedure, materials, and evidence to collect. No physical measurements, prior test logs, or working robot connection are included in this repository yet.
