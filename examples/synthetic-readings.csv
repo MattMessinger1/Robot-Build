@@ -1,0 +1,5 @@
+sample_id,reference_angle_deg,sensor_angle_deg,data_kind
+example-0,0,1,synthetic
+example-20,20,22,synthetic
+example-40,40,44,synthetic
+example-70,70,62,synthetic
