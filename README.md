@@ -1,6 +1,8 @@
 # Robot Build: an independent safety experiment
 
-Our first test uses a Raspberry Pi, a servo, a ruler, an MPU-6050 sensor, and a protractor. The servo will move the ruler. We will check the sensor's estimated angle against the protractor, then see whether software notices a difference between the sensor and a pretend robot reading.
+The proposed first test uses a small servo-driven arm, an angle sensor at the joint, an MPU-6050 on the forearm, and a protractor. We will build on the earlier motor work, check what each reading tells us, and see whether software notices a difference between readings.
+
+The proposed setup uses a Raspberry Pi Pico to control an MG996R servo and an AS5600 angle sensor to measure the joint. The Raspberry Pi can help collect and compare the data. Confirm the actual parts, existing code, and connections before building: the drawings are a starting concept, not a finished design or a completed test.
 
 The longer-term idea is an owner-controlled device that looks for a defined problem in robot data and asks the robot to stop. Access to the right data and a supported way to request a stop still need research. This is an experiment, not a robot safety system.
 
