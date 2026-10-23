@@ -26,9 +26,9 @@ Secure the setup and keep space around the moving arm. For a held-position tilt 
 
 ## 3. Check the sensor
 
-1. Record the hardware, code version, mounting, wiring, sensor orientation, calibration, and protractor precision. Define the same zero, axis, positive direction and units for each reading, and record the times so readings can be matched. Account for angle wraparound if needed.
-2. If the setup can safely reach them, command the servo to 0°, 30°, and 60°. Pause and let the arm settle at each position. Record the command, the protractor reading, the AS5600 joint angle, and the MPU-6050 tilt estimate.
-3. Record three readings at each position, nine in total. Save each sample's ID, time, original sensor data, derived angles, protractor reading, and reading uncertainty. Keep errors and unsuccessful readings too.
+1. Together, check the mounting, protractor alignment, safe travel, and power. Record the hardware, code version, wiring, sensor orientation, calibration, and protractor precision. Define the same zero, axis, positive direction and units for each reading, and record the times so readings can be matched. Account for angle wraparound if needed. With the arm supported and still, record a short baseline before moving it.
+2. If the setup can safely reach them, command the servo to 0°, 30°, and 60°. Pause and let the arm settle at each position. Record the command, the protractor reading, the AS5600 joint angle, the MPU-6050 tilt estimate, and anything unusual. One person operates and supervises; the other stays clear, observes, and records. They may switch roles.
+3. At each position, move away and return at least three times after the first hold, ideally approaching from both directions when safe. Take multiple readings at each hold. Save each sample's ID, time, original sensor data, derived angles, protractor reading, and reading uncertainty. Keep the original logs, notes, errors, and unsuccessful readings. Photos of held positions are optional.
 4. Check the encoder against the protractor before using it as a reference, and check the MPU-6050 estimate against them both. Record the differences and the largest one. The encoder is a measured reference with its own error, not perfect ground truth. Consider uncertainty before treating a small difference as an error.
 
 The existing `compare_readings.py` can compare recorded reference and sensor angles offline. It does not collect live readings. Its warning for a difference over 5° and its 10° injected change are experiment settings, not safety limits.
